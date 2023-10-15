@@ -15,11 +15,11 @@
             <h2 class="text-lg">
                 <span class="font-bold text-blue-700">Learning Width</span>: Manipulating elements using w-* classes 
             </h2>
-            <div class="flex space-x-4 mb-4">
+            <div class="flex gap-x-4 mb-4">
                 <div class="w-3/4 h-16 rounded-md bg-green-600 text-white flex items-center justify-center text-2xl font-extrabold">1</div>
                 <div class="w-1/4 h-16 rounded bg-yellow-400 flex items-center justify-center text-2xl font-extrabold">2</div>
             </div>
-            <div class="flex space-x-4 mb-4">
+            <div class="flex flex-row-reverse gap-x-4 mb-4">
                 <div class="w-16 h-16 rounded bg-blue-500 text-white flex items-start justify-end pr-3 text-2xl font-extrabold">3</div>
                 <div class="w-32 h-16 rounded bg-blue-500 text-white flex items-end justify-start pl-3 text-2xl font-extrabold">4</div>
                 <div class="w-full h-16 rounded bg-blue-500 text-white flex items-center justify-center text-2xl font-extrabold">5</div>
