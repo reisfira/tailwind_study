@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Styles -->
         @livewireStyles
@@ -42,5 +43,17 @@
         @stack('modals')
 
         @livewireScripts
+
+        @if (Session::has('message'))
+        <script>
+            Swal.fire({
+                title: 'Success',
+                text: '{!! Session::get('message') !!}',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            })
+        </script>
+            
+        @endif
     </body>
 </html>
