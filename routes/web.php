@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\LearningController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +31,9 @@ Route::middleware([
 });
 
 Route::resource('posts', PostController::class);
+
+Route::group([
+    'prefix' => 'learning'
+], function() {
+    Route::get('grid', [ LearningController::class, 'grid' ]);
+});
